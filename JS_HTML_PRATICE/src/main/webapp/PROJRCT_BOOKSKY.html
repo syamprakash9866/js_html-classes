@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<style>
+		.welcometext{
+			background-color: orange;
+			height:80px;
+			top:0px;
+		left:0px;
+			
+		}
+		
+		.BOX2{
+			WIDTH:20%;
+			background-color: lightpink;
+			height: 290PX;
+			margin-top:10px;
+			display: inline-block;
+			
+			}
+			
+			
+	  .buttonbox{
+				background-color: orangered;
+				height:40px;
+				width:40px;
+				border-radius: 100%;
+				margin-left: 95%;
+				margin-top: 15%;
+				font-size: 200%;
+			}
+		
+	.box3{
+			background-coloryellow;
+			height: 100%;
+			width:100%;
+			position: absolute;
+	     	top:0px;
+		   left:0px;
+		   z-index: 1;
+		   display: none;	
+		   opacity: 0.8;
+		}
+		.popupbox{
+			background-color: blueviolet;
+			height:40%  ;
+			width:30% ;
+			z-index: 2;
+		   display: block;
+		   margin-left:30%;
+		  margin-top:010%;
+		  padding: 50px;
+		  border-radius: 10px;
+		
+		}
+		
+	</style>
+	
+	
+	
+	
+	
+	<DIV class="welcometext"> 
+		<H1>WELCOME TO BOOKSKY</H1>
+	</DIV>
+
+	<div class="BOX2">
+		       <h1>sym</h1>
+		      <h3?>praksh</h3>
+		       <P>
+INFO: Deployment ofles\Apache Software Foundation\Tomcat 9.0_Tomcat99\webapps\docs] has finished in [831] ms
+Nov 19, 2023 3:31:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO </P>
+		       <button>delete</button>
+    </div>
+    
+    
+    
+    	
+<button class="buttonbox" id="popup">+</button>
+	
+	
+	<DIV class="box3">
+	
+	<div class="popupbox">
+		<input class="input1" placeholder="enter the book title" style="font-size: 20px; width:430px; ">
+		<input  class="input2" placeholder="auther name" style="width:430px; font-size: 20px; margin-top:8px">
+	<textarea class="input3" placeholder="shosrt desc" style="width:430px; font-size: 20px; margin-top:8px; height:150px;  "></textarea>
+	<br><br><button class="addbook">add</button>
+	<button onclick="remove()"  >cancel</button>
+	<button onclick="reset"  >reset</button>
+	</div>
+	</DIV>
+
+<script>
+	
+	var butt=document.querySelector(".box3")
+	var input11=document.querySelector(".input1")
+	var input22=document.querySelector(".input2")
+	var input33=document.querySelector(".input3")
+	var box33=document.querySelector(".BOX2")
+	var Addbook=document.querySelector(".addbook")
+	
+	
+	Addbook.addEventListener("click",function(){
+		
+		var ce=document.createElement("div")
+		ce.setAttribute("class","box2")
+        ce.innerHTML=`<h1>${input11.value}<h1>`	
+        box33.append(ce)	
+	}) 
+	
+
+
+	function show(){
+		            butt.style.display="block"
+		            }
+    function remove(){
+		
+		             butt.style.display="none"
+		
+		             }
+		
+		
+	
+</script>
+</body>
+</html>

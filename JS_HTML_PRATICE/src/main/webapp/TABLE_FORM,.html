@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>	
+
+
+
+	<form>
+	
+	
+	name:<input id="name"  class="ok"><br><br>
+    age:<input id="age" class="ok"><br><br>
+	sex:<input id="sex" class="ok"><br><br>
+	deptrmnt:<input id="dpt" class="ok"><br><br>
+	gmail:<input id="gm" class="ok"><br><br>
+	
+	
+</form><input type="submit" onclick="add()">
+
+<table border="1" id="tab1">
+
+	    <tr class="ww"><th>name</th>
+			<th>age</th>
+			<th>sex</th>
+			<th>department</th>
+			<th>gmail</th>
+	  </tr>
+	  
+	  
+	
+</table>
+
+
+<script>
+	var n=document.getElementById("name")
+	var a=document.getElementById("age")
+	var s=document.getElementById("sex")
+	var d=document.getElementById("dpt")
+	var g=document.getElementById("gm")
+	
+	
+	
+	
+	
+	var nw1=document.getElementById("tab1")
+	
+	var q=document.querySelectorAll(".ok")
+	
+	
+	
+	function add()
+	{
+		
+		for (count=0;count<q.length;count++)
+		{
+			var ne=document.createElement("tr")
+			ne.setAttribute("class","th")
+			
+			ne.innerHTML=`<td>${q[count].value}</td>`
+			
+			nw1.append(ne)
+			
+				
+			
+			console.log(ne.innerHTML)
+		}
+		
+		nw1.insertAdjacentElement("beforebegin",ne)
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+
+
+</body>
+</html>

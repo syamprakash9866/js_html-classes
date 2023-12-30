@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<H1>GUESSING GAME</H1>
+<input id="one">
+<button onclick="add()">check</button><br><br>
+<p id="two">your choice right or wrong</p>
+<p id="three">score</p>
+
+
+
+
+<script>
+	var score=10;
+	function add()
+	{	
+		var a=document.getElementById("one")
+		var f=document.getElementById("two")
+		var b=Math.random()*10
+		var c=Math.floor(b)+1
+		var s=document.getElementById("three")
+		var d=a.value
+		console.log(d)
+		console.log(c)
+		
+		var r=f.textContent
+		
+		if(d==c)
+		{console.log ("right")
+		f.textContent="ur aare right.."
+		alert("you won..........!!!!!")
+		
+		}
+		
+		else
+		{console.log("wrong")
+		f.textContent="ur r wrong .."
+		score=score-1
+		s.textContent="your score is :"+score
+		}
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+</script>
+</body>
+</html>

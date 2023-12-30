@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--
+	<style>
+		.box1{
+			
+			background-color: red;
+			display: inline-block;
+			height: 200px;
+			width:200px;
+			}
+			
+		.box2{background-color: black;
+			display: inline-block;
+			height: 200px;
+			width:200px;
+			}
+			
+		.box3{
+			background-color: red;
+			display:inline;
+			}
+			
+		.box4{
+			display:inline;
+			background-color: black;
+			color:azure
+			}
+</style>
+	<DIV CLASS="box1">	</DIV>
+    
+    <div class="box2">	</div>
+    
+    <h1 class="box3">hi</h1>
+    <h1 class="box4">bye</h1>
+
+<___________________________________________________________
+
+                      home buttuon       
+
+<style>
+	
+	.divbox{
+		background: green;
+		margin-left: 50px;
+		margin-top: 30px;
+		margin-right: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		border-style:solid;
+		border-color:navy;
+		border-height:5px;
+		
+		
+	   
+	}
+	.box1{background-color: black;
+	     color:white;
+		display: inline-block;
+		margin-right: 20px;
+		
+		}
+	.box2{background-color: black;
+	     color:white;
+		display: inline-block;
+		
+		margin-right: 20px;
+		}
+	.box3{background-color: black;
+	     color:white;
+		display: inline-block;
+		margin-right: 10px;
+		
+		}
+		*{
+			color:black;
+		}
+		
+</style>
+
+<div class="divbox">
+	<P  class="box1">home</P>
+	<p class="box2">aabout us</p>
+	<p class="box3">contact us</p>	
+</div>
+
+
+----------------------------------------------------
+prctice
+
+<style>.divbox{
+		background: black;
+		margin-left: 50px;
+		margin-top: 30px;
+		margin-right: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		border-style:solid;
+		border-color:red   ;
+		border-height:5px;
+		}
+		
+		.navibox
+		{background-color: white;
+	     color:black;
+		display: inline;
+		margin-left: 10px;
+		cursor: pointer;
+		}
+		
+		.box1{
+		  	background-color: WHITE;
+	     color:black;
+		display: inline-block;
+		margin-left: 900px;
+		cursor: pointer;
+		}
+	.box2{
+		background-color: white;
+	     color:black;
+		display: inline-block;
+		cursor: pointer;
+	margin-left: 50px;
+		} 
+	.box3{
+		background-color: white;
+	     color:black;
+		display: inline-block;
+		margin-left: 50px;
+		cursor: pointer;
+		}
+</style>
+<div class="divbox">
+	<p class="navibox">navi bar</pclass>
+	<P  class="box1">home</P>
+	<p class="box2">aabout us</p>
+	<p class="box3">contact us</p>	
+</div>
+______________________________________________________________________
+
+    THIS IS OVER DISLPY POP UP METHOD
+-->
+<style>
+	.box1{
+		
+		background-color: grey;
+		width:100%;
+		height:100%;
+		position: absolute;
+		top:0px;
+		left:0px;
+		z-index: 1;
+		display: none;	
+		}
+	
+   .box2{ background-color: red;
+		margin-left:30%;
+		margin-top: 15%;
+		width:30%;
+		height: 27%;
+		z-index: 3;
+		position: absolute;
+		display: none;
+		
+		}
+		.box3{
+			padding:10%;
+			margin-left: 30%;
+			font-size: 400%;
+			border-radius: 100%;
+		} 
+
+</style>
+
+
+
+
+<button class="box3"onclick="show()">+</button>
+<div class="box1">	
+	 <div class="box2">
+	    <p>
+	       Nov 19, 2023 2:16:20 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version name:   Apache Tomcat/9.0.82
+Nov 19, 2023 2:16:20 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Oct 11 2023 13:15:08 UTC
+Nov 19, 2023 2:16:20 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version number: 9.0.82
+      
+       </p>
+     <center>  <button onclick="remove()">close</button></center>
+   </div>
+</div>
+
+
+
+
+<script>
+	var c=document.querySelector(".box1")
+	var b=document.querySelector(".box2")
+	
+	function show(){
+		c.style.display="block";
+		b.style.display="block";
+	   }
+	   
+	   function remove(){
+		c.style.display="none";
+		b.style.display="none";
+	   }
+</script>
+
+
+
+
+
+
+</body>
+</html>

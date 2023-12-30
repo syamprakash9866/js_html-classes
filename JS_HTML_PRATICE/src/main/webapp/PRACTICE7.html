@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--	<h1 id="one">name</h1>
+  <button id="two" value="syam" onclick="t()">syam</button>
+  <button id="three" value="messi" onclick="e()">messi</button>
+  <button id="four" value="ronaldo" onclick="r()">ronaldo</button>
+  <script>
+	  var a=document.getElementById("one")
+	  var b=document.getElementById("two")
+	  var c=document.getElementById("three")
+	  var d=document.getElementById("four")
+	  function t()
+	  { 
+		  a.textContent=b.value
+		
+	  }
+	  function e()
+	  {
+		  a.textContent=c.value
+		
+	  }
+	  function r()
+	  {
+		  a.textContent=d.value
+		
+	  }
+	  
+	  
+  </script>
+  ____________________________________________________________________________________________________
+     instead writing ,ore function we camn get all details of the button by using event functuiopn
+ 
+  <h1 id="one">name</h1>
+  <button id="two"  onclick="t(event)">syam</button>
+  <button id="two"  onclick="t(event)">leena</button>
+  <button id="two"  onclick="t(event)">priyan</button>
+  <script>
+	  var a=document.getElementById("one")
+	  function t(event)
+	  {
+		  a.textContent=event.target.textContent
+	  }________
+	  </script>____________________________________________________________________________________
+	  
+	  .
+	  to taking out elememnt inside the age we can use event and directlu reomoing 
+	     -->
+	  <h1 onclick="add(event)">HELLO</h1>
+	  <h1  onclick="add(event)">three</h1>
+	  <h1  onclick="add(event)">two</h1>
+	  <h1  onclick="add(event)">four</h1>
+	  <h1  onclick="add(event)">five</h1>
+	 
+	  <button > magic</button>
+	  <script>
+		  var h1=document.getElementById("one")
+		  function add(event){
+			  event.target.remove()
+			  
+		  }
+		  
+		  
+		  
+	  </script>
+	  
+</body>
+</html>

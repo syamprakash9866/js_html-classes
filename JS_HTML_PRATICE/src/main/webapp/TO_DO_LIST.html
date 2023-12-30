@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>enter ur ton do list here</h1>
+	
+  
+  
+  
+ <!--_____________________________
+ ordrerd list we can use this when we wnt numbers order 
+	 
+	  <ol id="two">
+  <li id="two"></li> 
+  </ol id="two">-->
+  
+  <input id="one" >
+  <button onclick="add()">add</button>
+  <ul >
+	  <li id="two">add here</li> 
+  </ul >
+  
+ 
+  <script>
+	  var uinput=document.getElementById("one")
+	  var t=document.getElementById("two")
+	  
+	  function add()
+	  { 
+		  var a=document.createElement("li")
+		  
+		  a.innerHTML=uinput.value + " <button onclick='dlt(event)'>delete</button>"
+		  t.append(a)
+      }
+      function dlt(event)
+      {
+		  
+		  event.target.parentElement.remove()
+	  }
+      
+      
+      
+  </script>	
+  
+</body>
+</html>

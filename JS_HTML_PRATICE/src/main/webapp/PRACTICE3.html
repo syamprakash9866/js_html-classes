@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	NAME:<input  id="num1" > 
+     SEX:<input  id="num2">
+    
+     <button onclick="add()">submit</button>
+      <P id="one">hiii</P>
+<script>
+	function add(){
+		var a=document.getElementById("num1");
+		var b=document.getElementById("num2");
+		var c=document.getElementById("one");
+		var d=a.value
+		var e=b.value
+		c.textContent=d+e;
+		
+	/* we can use this for taing number	00   
+		var d=Number(a.value)
+		var e=Number(b.value) */
+     
+	console.log(c.textContent)
+	}
+</script>
+</body>
+</html>
